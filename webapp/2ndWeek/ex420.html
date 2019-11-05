@@ -1,0 +1,55 @@
+<!-- 省略記法を省略しない記法に書き直す課題 -->
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ex420: 天候情報取得</title>
+    <!-- jQueryライブラリの指定：2019/10/31現在最新版をダウンロード -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Yahoo API WeatherにアクセスするjQueryライブラリの拡張ライブラリ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+
+    <script>
+      //readyメソッドの省略表記と無名関数が使われている
+      $(function(){
+
+        //jQuery.simpleWeather()の省略表記と無名関数が使われている
+        $.simpleWeather({
+          //初期設定：都市の指定
+          location: 'Sapporo, JP',
+         
+
+          //初期設定：温度の単位を摂氏に指定
+          unit: 'c',
+
+          //正常に実行されたときの処理
+          success: function(weather) {
+            //地名の表示
+            $("#city").html("地名：" + weather.city + ', ' + weather.region);
+
+            //気温の表示: &deg; ＝度数を表す「°」のHTML表記
+            $("#current_temp").html("現在の気温：" + weather.temp + '&deg;' + weather.units.temp);
+
+            //現在の天候
+            $("#current_weather").html("現在の天候：" + weather.currently);
+          },
+
+          //情報が取得できなかった時の処理
+          error: function(error_msg) {
+            $("#city").html(error_msg);
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <p id="city"></p>
+      <p id="current_temp"></p>
+      <p id="current_weather"></p>
+    </div>
+  </body>
+</html>
