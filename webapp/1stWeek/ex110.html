@@ -1,4 +1,4 @@
-﻿<!-- 10個の10進数をそれぞれ16進数に変換し表示するプログラム -->
+<!-- 10個の10進数をそれぞれ16進数に変換し表示するプログラム -->
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -9,7 +9,13 @@
      <script>
        function to_hex(decimal) {
        //ここに10進数を16進数に変換する関数の中身を書くこと。
-
+		if (decimal>=0 && decimal<=255){
+			var re =decimal.toString(16) ;
+			return re
+		}	
+		else{ 
+			return 0;
+		}
        }
 
        //decimalsは10進数を10個格納する配列
