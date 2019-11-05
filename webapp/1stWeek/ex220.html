@@ -13,22 +13,28 @@
 
       //テキスト行を追加する関数
       function addText(event){
-        //この関数の中身を記述すること。
-        //ヒント１：テキスト行のDOMノード作成にはdocument.createElement('p')
-        //を利用すること。
-	//ヒント２：作成したDOMノードのinnerHTMLに文字列を代入することで実際の
-        //文字列の追加・修正が可能。
-        //ヒント３：DOMノードはdocument.body.appendChild()関数を使うことで追加可能
-
-        //ヒント４：作成したDOMノードは配列 nodeArray に保存しておくこと。
-
-      }
+      		i++;
+		//この関数の中身を記述すること。
+		//ヒント１：テキスト行のDOMノード作成にはdocument.createElement('p')
+		//を利用すること。
+		node = document.createElement('p');
+		//ヒント２：作成したDOMノードのinnerHTMLに文字列を代入することで実際の
+		//文字列の追加・修正が可能。
+		 node.innerHTML =i+'テキストが追加されました';
+		//ヒント３：DOMノードはdocument.body.appendChild()関数を使うことで追加可能
+		 document.body.appendChild(node);
+		//ヒント４：作成したDOMノードは配列 nodeArray に保存しておくこと。
+		 nodeArray[i] =node ;
+		 
+	      }
 
       //テキスト行を削除する関数
       function removeText(event){
         //この関数の中身を記述すること。
         //ヒント１：削除するDOMノードは配列 nodeArray に保存されている
         //ヒント２：document.body.removeChild()関数を使うことでDOMノードを削除可能
+        document.body.removeChild(nodeArray[i])
+        i--;
 
 
       }
@@ -47,8 +53,8 @@
   </head> 
   <body>
     <div id="box">
-      <button id="add-text">行の追加</button>
-      <button id="remove-text">行の削除</button>
+      <button id="add-text">A</button>
+      <button id="remove-text">B</button>
     </div>
   </body>
 </html>
