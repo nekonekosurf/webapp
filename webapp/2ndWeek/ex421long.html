@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ex421: 天気情報取得</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./mamewaza/mamewaza_weather.min.js"></script>
+    <script>
+    var state = false;
+    jQuery(document).ready(init);
+    function init(){
+      jQuery('#okinawa').click(okinawa_weather);
+      jQuery('#sapporo').click(sapporo_weather);
+      jQuery('#tokyo').click(tokyo_wewather);
+    }
+    //札幌表示されないわけわからん    番号変えるとうまくいく
+    function sapporo_weather(){
+      if(state == true){
+        state = false;
+        jQuery('#city').text('');
+      }
+      jQuery('#name').text('札幌の天気')
+      mamewaza_func(016010)//札幌
+      state = true;
+    }
+
+    function okinawa_weather(){
+      if(state == true){
+        state = false;
+        jQuery('#city').text('');
+      }
+      jQuery('#name').text('那覇の天気')
+      mamewaza_func(471010)//那覇
+      state= true;
+    }
+
+
+    function tokyo_wewather(){
+      if(state == true){
+        state = false;
+        jQuery('#city').text('');
+      }
+      jQuery('#name').text('東京の天気')
+      mamewaza_func(130010)//東京
+      state = true;
+    }
+    function mamewaza_func(city){
+      jQuery.mamewaza_weather({
+        //ここは省略されているのか?
+        selector: "#city",
+        region: city,//東京に変更　仕様（１）
+        layout: "horizontal",//表示形式変更　仕様（２）
+        when: "2days",//表示形式変更　仕様（２）
+        explanation: true,//説明表示　仕様（３）
+        cssPath: "./mamewaza/mamewaza_weather.css"
+      })
+    }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>ボタンを押して都市を選択してください</p>
+      <span id='name'></span><br>
+      <p>
+        <button id='okinawa'>沖縄</button>
+        <button id='sapporo'>札幌</button>
+        <button id='tokyo'>東京</button
+      </p>
+      <span id='city'></span><br>
+      <!-- <p id="city"></p> -->
+    </div>
+  </body>
+</html>
