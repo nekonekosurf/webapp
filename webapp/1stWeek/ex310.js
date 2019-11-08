@@ -2,6 +2,7 @@
 var timer;
 var start;
 var isStarted = false;
+var keika=0;
 
 //DOMで操作する要素を代入
 var startButton = document.getElementById('start');
@@ -32,20 +33,24 @@ function watchStop(){
     // clearIntervalはsetIntervalを停止する関数
     clearInterval(timer);
     isStarted = false;
+    var w_start =  new Date();
+    keika = keika + (w_start -start);
   }
 }
 //リセットボタンのイベントハンドラー（仕様(6)を満たすためには改造が必要）
 function watchReset(){
-  watchStop();
+  //watchStop();
   // DOM の watch ノードのHTML記述を更新することでゼロにリセット
-  watch.innerHTML = "00:00:00:0";
+  if(isStarted == false){
+	  watch.innerHTML = "00:00:00:0";
+	}
 }
 //計測中の時刻計算用関数
 function updateWatch() {
   //現在時間を date に代入
   var date = new Date();
   //ここで diff という変数を定義し、現在時刻とスタートした時刻の差分を代入
-  diff = date.getTime()-start.getTime();
+  diff = date.getTime()-start.getTime()+keika;
   //するコードを以下に書くこと。具体的には date と start オブジェクトの
   //getTime() メソッドの返り値を用いて計算すること。 getTime() メソッドは、
   //オブジェクト内に格納されているミリ秒単位の時刻を出力する。
