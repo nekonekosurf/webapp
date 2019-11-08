@@ -30,7 +30,6 @@
       var isAnimating = false;        //パラパラアニメーションの再生/終了状態を
                                         //表すフラグ
       var stopped = false;            //パラパラアニメーションの一時停止状態を
-                                        //表すフラグ
 
 
       //readyメソッド：この関数はHTML文書の読み込みが完了した後に呼ばれる
@@ -53,7 +52,7 @@
 
         //「スタート」ボタンをクリックしたときに呼ばれる関数
         $("#startBtn").click(function(){
-
+		
           //パラパラアニメーション中なら終了させる
           if (isAnimating) {
             clearTimeout(timerId);
@@ -78,6 +77,29 @@
         //手順1.パラパラアニメーションを一時停止
         //現在img要素がパラパラアニメーション再生状態にあるかを判定
         //もし再生中ならば, そのアニメーションを一時停止する
+        if (isAnimating) { //再生中
+          clearTimeout(timerId);
+          isAnimating = true;
+          $("#startBtn").val("ストップ");
+   			 
+								$("#myImage").animate({
+															"left": event.pageX-$("#myImage").width()/2,
+															//"left": event.pageX,
+															"top": event.pageY-$("#myImage").height()/2}
+															//"top": event.pageY}
+															,"normal",flipAnimate)
+															
+															
+					}	else{//停止中
+						$("#myImage").animate({
+															"left": event.pageX-$("#myImage").width()/2,
+															//"left": event.pageX,
+															"top": event.pageY-$("#myImage").height()/2}
+															//"top": event.pageY}
+															,"normal")
+														
+															
+					}														
 
         //手順2.ID=myImageを持つimg要素に対して直線移動アニメーション効果を適用
         //アニメーションの内容は, ダブルクリックを行った位置までimg要素(の中心部分)

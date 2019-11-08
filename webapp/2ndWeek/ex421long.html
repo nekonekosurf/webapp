@@ -11,17 +11,16 @@
     jQuery(document).ready(init);
     function init(){
       jQuery('#okinawa').click(okinawa_weather);
-      jQuery('#sapporo').click(sapporo_weather);
+      jQuery('#oosaka').click(oosaka_weather);
       jQuery('#tokyo').click(tokyo_wewather);
     }
-    //札幌表示されないわけわからん    番号変えるとうまくいく
-    function sapporo_weather(){
+    function oosaka_weather(){
       if(state == true){
         state = false;
         jQuery('#city').text('');
       }
-      jQuery('#name').text('札幌の天気')
-      mamewaza_func(016010)//札幌
+      jQuery('#name').text('大坂の天気')
+      mamewaza_func(270000)//大坂
       state = true;
     }
 
@@ -64,7 +63,7 @@
       <span id='name'></span><br>
       <p>
         <button id='okinawa'>沖縄</button>
-        <button id='sapporo'>札幌</button>
+        <button id='oosaka'>大坂</button>
         <button id='tokyo'>東京</button
       </p>
       <span id='city'></span><br>
