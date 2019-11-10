@@ -26,8 +26,6 @@
             <input type="text" name="name" id="name" value="" />
             <fieldset>
           </div>
-
-
           <div data-role="fieldcontain">
             <label for="kind">商品名</label>
             <select name="kind" id="kind">
@@ -38,9 +36,6 @@
               <option value="選択項目4">抹茶シェイク</option>
             </select>
           </div>
-
-
-
           <div data-role="fieldcontain">
             <fieldset data-role="controlgroup">
               <legend>甘さ</legend>
@@ -52,25 +47,26 @@
               <label for="radio-choice-3">100%</label>
             </fieldset>
           </div>
-
           <div data-role="fieldcontain">
             <label for="slider">氷の量</label>
-            <!-- <span id = "value">5</span> -->
-            <input type="range" name="slider" id="slider" value="60" min="0" max="100" step="10" />
-
+            <span id = "value">少なめ</span>
+            <input type="range" name="slider" id="slider" value="1" min="0" max="2" step="1" onchange="showValue()"/>
           </div>
-          <!-- ここスクリプトがうまくいかない -->
-          <!-- <script>
-            var elem = document.getElementById('slider');
-            var target = document.getElementById('value');
-            var rangeValue = function (elem, target) {
-              return function(evt){
-                target.innerHTML = elem.value;
-              }
-            }
-            elem.addEventListener('input', rangeValue(elem, target));
-          </script> -->
-
+        <!-- ここスクリプトがうまくいかない -->
+        <script>
+          function  showValue(){
+             // var elem = document.getElementById('slider');
+             // var target = document.getElementById('value');
+             // elem.innerHTML = target.value;
+             if( document.getElementById('slider').value==0){
+               document.getElementById('value').innerHTML = "なし";
+             }else if (document.getElementById('slider').value==0) {
+               document.getElementById('value').innerHTML = "少なめ";
+             }else {
+               document.getElementById('value').innerHTML = "普通";
+             }
+          }
+        </script>
           <div data-role="fieldcontain">
             <label for="flip-1">タピオ有無</label>
             <select name="flip-1" id="flip-1" data-role="slider">
@@ -78,16 +74,10 @@
               <option value="on">入れない</option>
             </select>
           </div>
-
-
-
           <div data-role="fieldcontain">
             <label for="inquiery">備考</label>
             <textarea name="inquiery" id="inquirery"></textarea>
           </div>
-
-
-
           <input type="submit" id="submit" data-thema="b" value="送信">
         </form>
       </div>
