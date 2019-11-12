@@ -91,4 +91,32 @@ INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp
 INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex520_and_521.html
 INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/1_1.png
 INPUT extractbb -O ../webapp/png/1_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/1_2.png
+INPUT extractbb -O ../webapp/png/1_2.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/2_1.png
+INPUT extractbb -O ../webapp/png/2_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/2_2.png
+INPUT extractbb -O ../webapp/png/2_2.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/4_1.png
+INPUT extractbb -O ../webapp/png/4_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/4-2.png
+INPUT extractbb -O ../webapp/png/4-2.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/4_3.png
+INPUT extractbb -O ../webapp/png/4_3.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/5_1_3.png
+INPUT extractbb -O ../webapp/png/5_1_3.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/5_2_1.png
+INPUT extractbb -O ../webapp/png/5_2_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_1_ff.png
+INPUT extractbb -O ../webapp/png/6_1_1_ff.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_1_ch.png
+INPUT extractbb -O ../webapp/png/6_1_1_ch.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_2ff.jpg
+INPUT extractbb -O ../webapp/png/6_1_2ff.jpg
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_2_ch.jpg
+INPUT extractbb -O ../webapp/png/6_1_2_ch.jpg
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_2_1.png
+INPUT extractbb -O ../webapp/png/6_2_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_2_2.png
+INPUT extractbb -O ../webapp/png/6_2_2.png
 INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux
