@@ -1,56 +1,47 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>ex210: 背景色を書き換える</title>
-    <style>
-      body {
-        /* 背景色の初期値は白 */ 
-        background-color: #ffffff;
-      }
-    </style>
-    <script>
-      // color_id は現在の色を示す変数
-      var color_id = 0; // 0は初期色の白を示している
 
-      // max_colors は変化させる色の数
-      // サンプルでは3色にしているが、実際には10色で作成すること。
-      var max_colors = 10;
+<head>
+  <meta charset="UTF-8">
+  <title>ex210: 背景色を書き換える</title>
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+  </style>
+  <script>
+    var color_id = 0;
+    var max_colors = 10;
+    var colors = new Array(max_colors);
+    colors[0] = "#ffffff";
+    colors[1] = "#ffff00";
+    colors[2] = "#0000ff";
+    colors[3] = "#7fffd4";
+    colors[4] = "#90ee90";
+    colors[5] = "#00fa9a";
+    colors[6] = "#7fff00";
+    colors[7] = "#00ff00";
+    colors[8] = "#9acd32";
+    colors[9] = "#6b8e23";
 
-      // colors は色コードを格納する配列。
-      var colors = new Array(max_colors);
-      colors[0] = "#ffffff"; // colors[0]は必ず白とすること
-      colors[1] = "#ffff00"; // 黄色
-      colors[2] = "#0000ff"; // 青色
-      colors[3] = "#7fffd4";
-      colors[4] = "#90ee90";
-      colors[5] = "#00fa9a";
-      colors[6] = "#7fff00";
-      colors[7] = "#00ff00";
-      colors[8] = "#9acd32";
-      colors[9] = "#6b8e23"; 
+    function changeBgForward() {
+      color_id++;
+      color_id = color_id % max_colors;
+      document.body.style.backgroundColor = colors[color_id]
+    }
 
-	
-      //背景色を一つ前方の色に変更する関数
-      function changeBgForward() {
-        //ここに関数の中身を書くこと。
-        // document.body.style.backgroundColorに色コードを代入すると色を変更できる
-		color_id ++;
-		color_id = color_id%max_colors;	
-		document.body.style.backgroundColor= colors[color_id]
-      }
+    function changeBgBackward() {
+      color_id = (max_colors + color_id - 1) % max_colors;
+      document.body.style.backgroundColor = colors[color_id]
+    }
+  </script>
+</head>
 
-      //背景色を一つ後方の色に変更する関数
-      function changeBgBackward() {		
-		color_id = (max_colors+color_id-1)%max_colors;
-		document.body.style.backgroundColor= colors[color_id]
-      }
-    </script>
-  </head>
-  <body>
-    <div>
-       <button onclick="changeBgForward()">A</button>
-       <button onclick="changeBgBackward()">B</button>
-    </div>
-  </body>
+<body>
+  <div>
+    <button onclick="changeBgForward()">A</button>
+    <button onclick="changeBgBackward()">B</button>
+  </div>
+</body>
+
 </html>
