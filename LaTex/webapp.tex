@@ -1,0 +1,677 @@
+\documentclass[a4j]{jarticle}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{OliveGreen}{rgb}{0.0,0.6,0.0}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape \color[rgb]{0,0.5,0}},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=0zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex,
+  linewidth=15cm
+}
+%ここまでソースコードの表示に関する設定
+\begin{document}
+以下使用したソースコードを示す．
+
+\lstinputlisting[caption = ex110.html]{../webapp/1stWeek/ex110.html}
+\newpage
+\lstinputlisting[caption = ex120.html]{../webapp/1stWeek/ex120.html}
+\newpage
+\lstinputlisting[caption = ex210.html]{../webapp/1stWeek/ex210.html}
+\newpage
+\lstinputlisting[caption = ex220.html]{../webapp/1stWeek/ex220.html}
+\newpage
+\lstinputlisting[caption =ex410short.html ]{../webapp/2ndWeek/ex410short.html}
+\newpage
+\lstinputlisting[caption =ex421long.html ]{../webapp/2ndWeek/ex421long.html}
+\newpage
+\lstinputlisting[caption = ex430.html]{../webapp/2ndWeek/ex430.html}
+\newpage
+\lstinputlisting[caption = ex510dev.html]{../webapp/2ndWeek/ex510dev.html}
+\newpage
+\lstinputlisting[caption = ex520\_and\_521.html]{../webapp/2ndWeek/ex520_and_521.html}
+\newpage
+% \begin{lstlisting}[caption=ex110.html]
+%   <!DOCTYPE HTML>
+%   <html>
+%     <head>
+%       <meta charset="UTF-8">
+%       <title>ex220: テキストの行を追加・削除する</title>
+%       <script>
+%         var i = 0;
+%         var nodeArray = new Array(100);
+%         function addText(event){
+%       		i++;
+%       		node = document.createElement('p');
+%           document.body.appendChild(node);
+%     		  node.innerHTML =i+'テキストが追加されました';
+%     		  nodeArray[i] =node ;
+%   	    }
+%         function removeText(event){
+%           document.body.removeChild(nodeArray[i])
+%           i--;
+%         }
+%         window.addEventListener("load", function(event){
+%         var addButton    = document.getElementById("add-text");
+%         var removeButton = document.getElementById("remove-text");
+%         addButton.   addEventListener("click", addText,    false);
+%         removeButton.addEventListener("click", removeText, false);
+%         }, false);
+%       </script>
+%     </head>
+%     <body>
+%       <div id="box">
+%         <button id="add-text">A</button>
+%         <button id="remove-text">B</button>
+%       </div>
+%     </body>
+%   </html>
+% \end{lstlisting}
+% \newpage
+%
+% \begin{lstlisting}[caption=ex120.html]
+%   <!-- 16進数(1~F)の掛け算表を表示するプログラム -->
+%   <!DOCTYPE HTML>
+%   <html>
+%   <head>
+%   <meta charset="UTF-8">
+%   <title>ex120: 16進数の掛け算表</title>
+%   </head>
+%   <body>
+%   <script>
+%   function to_hex(decimal) {
+%     if (decimal>=0 && decimal<=255){
+%       var re =decimal.toString(16) ;
+%       return re
+%     }
+%     else{
+%       return 0;
+%     }
+%   }
+%   var n = 16;	   //二次元配列の行、列の要素数(16×16の配列を作る)
+%   var tableData;  //掛け算表のデータを格納するn×nの二次元配列データ
+%   tableData = new Array(n)
+%   for (var i =0;i<n;i++){
+%     tableData[i]= new Array(n);
+%   }
+%   for (var i=0;i<n;i++){
+%     for (var j=0;j<n;j++){
+%       tableData[i][j]= to_hex(i*j);
+%       if(i==0){
+%         tableData[i][j]=j;
+%       }
+%       if(j==0){
+%         tableData[i][j]=i;
+%       }
+%       if (j==0 && i==0){ //こいつの位置は固定
+%         tableData[i][i]="\\ "	;
+%       }
+%     }
+%   }
+%   document.write("<table border>");  //表の定義を開始、以降のコードで表の中身を定義していく
+%   for(var i=0; i<n; i++){
+%     document.write("<tr>");  //表の横一行部分の定義を開始
+%     for(var j=0; j<n; j++){
+%       //以下のコードを変更し、表の各セルに掛け算表のデータを出力するコードをここに書くこと。
+%       document.write("<td> ",tableData[i][j], " </td>");
+%     }
+%     document.write("</tr>");  //表の横一行部分の定義を終了
+%   }
+%   document.write("</table>"); 　//表の定義を終了
+%   </script>
+%   </body>
+%   </html>
+% \end{lstlisting}
+%
+% \newpage
+% \begin{lstlisting}[caption=ex210.html]
+%   <!-- 16進数(1~F)の掛け算表を表示するプログラム -->
+%   <!DOCTYPE HTML>
+%   <html>
+%   <head>
+%   <meta charset="UTF-8">
+%   <title>ex120: 16進数の掛け算表</title>
+%   </head>
+%   <body>
+%   <script>
+%   function to_hex(decimal) {
+%     if (decimal>=0 && decimal<=255){
+%       var re =decimal.toString(16) ;
+%       return re
+%     }
+%     else{
+%       return 0;
+%     }
+%   }
+%   var n = 16;	   //二次元配列の行、列の要素数(16×16の配列を作る)
+%   var tableData;  //掛け算表のデータを格納するn×nの二次元配列データ
+%   tableData = new Array(n)
+%   for (var i =0;i<n;i++){
+%     tableData[i]= new Array(n);
+%   }
+%   for (var i=0;i<n;i++){
+%     for (var j=0;j<n;j++){
+%       tableData[i][j]= to_hex(i*j);
+%
+%       if(i==0){
+%         tableData[i][j]=j;
+%       }
+%       if(j==0){
+%         tableData[i][j]=i;
+%       }
+%       if (j==0 && i==0){ //こいつの位置は固定
+%         tableData[i][i]="\\ "	;
+%       }
+%     }
+%   }
+%   document.write("<table border>");  //表の定義を開始、以降のコードで表の中身を定義していく
+%   for(var i=0; i<n; i++){
+%     document.write("<tr>");  //表の横一行部分の定義を開始
+%     for(var j=0; j<n; j++){
+%       document.write("<td> ",tableData[i][j], " </td>");
+%     }
+%
+%     document.write("</tr>");  //表の横一行部分の定義を終了
+%   }
+%   document.write("</table>"); 　//表の定義を終了
+%   </script>
+%   </body>
+%   </html>
+% \end{lstlisting}
+% \newpage
+%
+% \begin{lstlisting}[caption=ex220.html]
+%   <!DOCTYPE HTML>
+%   <html>
+%   <head>
+%   <meta charset="UTF-8">
+%   <title>ex220: テキストの行を追加・削除する</title>
+%   <script>
+%   //現在の行数を表す変数、初期値は0
+%   var i = 0;
+%   var nodeArray = new Array(100);
+%   function addText(event){
+%     i++;
+%     node = document.createElement('p');
+%     node.innerHTML =i+'テキストが追加されました';
+%     document.body.appendChild(node);
+%     nodeArray[i] =node ;
+%   }
+%   function removeText(event){
+%     document.body.removeChild(nodeArray[i])
+%     i--;
+%   }
+%   window.addEventListener("load", function(event){
+%     var addButton    = document.getElementById("add-text");
+%     var removeButton = document.getElementById("remove-text");
+%     addButton.   addEventListener("click", addText,    false);
+%     removeButton.addEventListener("click", removeText, false);
+%     }, false);
+%     </script>
+%     </head>
+%     <body>
+%     <div id="box">
+%     <button id="add-text">A</button>
+%     <button id="remove-text">B</button>
+%     </div>
+%     </body>
+%     </html>
+% \end{lstlisting}
+% \newpage
+%
+% \begin{lstlisting}[caption=ex410short.html]
+%   <!-- 省略しない記法で書かれたプログラムを省略記法に書き直す課題 -->
+%   <!DOCTYPE HTML>
+%   <html>
+%     <head>
+%       <meta charset="UTF-8">
+%       <title>ex410: ajaxの実験</title>
+%       <!-- jQueryライブラリの指定：2019/10/31現在最新版をダウンロード -->
+%       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+%       <script>
+%         var left_state  = false;
+%         var right_state = false;
+%         $(function(){
+%           $('#button1').click(
+%             function(){
+%               if(left_state==false){
+%                 $.ajax('ex410-load.txt').done(
+%                   function(data){
+%                     $('#status-area1').text('読み込み成功');
+%                     $('#display-area1').text(data);
+%                   }
+%                 ).fail(
+%                   function(data){
+%                     $('#status-area1').text('読み込み失敗');
+%                   }
+%                 );
+%                 left_state=true;
+%               }else{
+%                 $('#status-area1').text('');
+%                 $('#display-area1').text('');
+%                 left_state = false;
+%               }
+%             }
+%           );
+%           $('#button2').click(
+%             function(){
+%               if(right_state==false){
+%                 $.ajax('ex410-load.html').done(
+%                   function(data){
+%                     $('#status-area2').text('読み込み成功');
+%                     $('#display-area2').html(data);
+%                   }
+%                 ).fail(
+%                   function(data){
+%                     $('#status-area2').text('読み込み失敗');
+%                   }
+%                 );
+%                 right_state=true;
+%               }else{
+%                 $('#status-area2').text('');
+%                 $('#display-area2').html('');
+%                 right_state = false;
+%               }
+%             }
+%           );
+%         }
+%       );
+%       </script>
+%     </head>
+%
+%     <body bgcolor="#FFFFFF">
+%       <table>
+%         <tr>
+%           <td>
+%             <div style='clear:both;border: 2px dotted #080;margin:10px; padding:10px;'>
+%               <p>
+%                 <button id='button1'>Ajax で取得したテキストファイルを表示</button>
+%               </p>
+%               <span id='status-area1'></span><br>
+%               <div id='display-area1' style='border:1px solid #00f;padding:10px;font-size:20px;font-weight:bold; height: 100px'></div>
+%             </div>
+%           </td>
+%           <td>
+%             <div style='clear:both;border: 2px dotted #080;margin:10px; padding:10px;'>
+%               <p>
+%                 <button id='button2'>Ajax で取得した HTML を表示</button>
+%               </p>
+%               <span id='status-area2'></span><br>
+%               <div id='display-area2' style='border:1px solid #00f;padding:10px;font-size:20px;font-weight:bold; height: 100px'></div>
+%             </div>
+%           </td>
+%         </tr>
+%       </table>
+%     </body>
+%   </html>
+% \end{lstlisting}
+% \newpage
+%
+% \begin{lstlisting}[caption=ex421long.html]
+%   <!DOCTYPE HTML>
+%   <html>
+%
+%     <head>
+%       <meta charset="UTF-8">
+%       <title>ex421: 天気情報取得</title>
+%       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+%       <script src="./mamewaza/mamewaza_weather.min.js"></script>
+%       <script>
+%       var state = false;
+%       jQuery(document).ready(init);
+%       function init(){
+%         jQuery('#okinawa').click(okinawa_weather);
+%         jQuery('#oosaka').click(oosaka_weather);
+%         jQuery('#tokyo').click(tokyo_wewather);
+%       }
+%       function oosaka_weather(){
+%         if(state == true){
+%           state = false;
+%           jQuery('#city').text('');
+%         }
+%         jQuery('#name').text('大坂の天気')
+%         mamewaza_func(270000)//大坂
+%         state = true;
+%       }
+%
+%       function okinawa_weather(){
+%         if(state == true){
+%           state = false;
+%           jQuery('#city').text('');
+%         }
+%         jQuery('#name').text('那覇の天気')
+%         mamewaza_func(471010)//那覇
+%         state= true;
+%       }
+%       function tokyo_wewather(){
+%         if(state == true){
+%           state = false;
+%           jQuery('#city').text('');
+%         }
+%         jQuery('#name').text('東京の天気')
+%         mamewaza_func(130010)//東京
+%         state = true;
+%       }
+%       function mamewaza_func(city){
+%         jQuery.mamewaza_weather({
+%           selector: "#city",
+%           region: city,//東京に変更　仕様（１）
+%           layout: "horizontal",//表示形式変更　仕様（２）
+%           when: "2days",//表示形式変更　仕様（２）
+%           explanation: true,//説明表示　仕様（３）
+%           cssPath: "./mamewaza/mamewaza_weather.css"
+%         })
+%       }
+%       </script>
+%     </head>
+%     <body>
+%       <div>
+%         <p>ボタンを押して都市を選択してください</p>
+%         <span id='name'></span><br>
+%         <p>
+%           <button id='okinawa'>沖縄</button>
+%           <button id='oosaka'>大坂</button>
+%           <button id='tokyo'>東京</button
+%         </p>
+%         <span id='city'></span><br>
+%         <!-- <p id="city"></p> -->
+%       </div>
+%     </body>
+%   </html>
+% \end{lstlisting}
+% \newpage
+%
+% \begin{lstlisting}[caption=ex430.html]
+%   <!-- jQueryを利用したアニメーションの課題 -->
+%   <!DOCTYPE HTML>
+%   <html>
+%     <head>
+%       <meta charset="UTF-8">
+%       <title>ex430: パラパラアニメーション</title>
+%       <!-- jQueryライブラリの指定：2019/10/31現在最新版をダウンロード -->
+%       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+%
+%       <style type="text/css"> /*style内の書式はcss*/
+%         /*myImageというID属性が付けられたHTML要素に対してスタイルを指定*/
+%         #myImage {
+%          	position: absolute;        /*配置する位置を絶対位置で指定
+%             (absoluteの場合はブラウザウインドウの左上が基準位置(0,0)となる)*/
+%           top: 20px;                 /*ウインドウ左上から20px下に配置*/
+%           left: 100px;               /*ウインドウ左上から100px右に配置*/
+%           -moz-user-select: none;    /*ダブルクリックやドラッグで選択されない
+%                                        ようにする(Firefox版)*/
+%           -webkit-user-select: none; /*(Safari, Chrome版)*/
+%         }
+%       </style>
+%       <script type="text/javascript">
+%         var NumOfImage = 4;
+%         var INTERVAL = 200;
+%         var currentImg = 0;
+%         var timerId;
+%         var isAnimating = false;
+%         var stopped = false;
+%         $(function(){
+%           for(var i=0; i<NumOfImage; i++)
+%             $("<img>").attr("src", "images/img" + i + ".png");
+%           $("<img id='myImage' width='80' height='120'>")
+%             .attr("src", "images/img0.png")
+%             .appendTo("#myDiv");
+%           $("#startBtn").click(function(){
+%             //パラパラアニメーション中なら終了させる
+%             if (isAnimating) {
+%               clearTimeout(timerId);
+%               isAnimating = false;
+%               $("#startBtn").val("スタート");
+%             //そうでなければアニメーション開始
+%             }else{
+%               isAnimating = true;
+%               flipAnimate();
+%               $("#startBtn").val("ストップ");
+%             }
+%           });
+%         });
+%         $(document).dblclick(function(event){
+%           if (isAnimating) { //再生中
+%             clearTimeout(timerId);
+%             isAnimating = true;
+%             $("#startBtn").val("ストップ");
+%     				$("#myImage").animate({
+%     											"left": event.pageX-$("#myImage").width()/2,
+%     											//"left": event.pageX,
+%     											"top": event.pageY-$("#myImage").height()/2}
+%     											//"top": event.pageY}
+%     											,"normal",flipAnimate)
+%   					}	else{//停止中
+%   						$("#myImage").animate({
+%   															"left": event.pageX-$("#myImage").width()/2,
+%   															//"left": event.pageX,
+%   															"top": event.pageY-$("#myImage").height()/2}
+%   															//"top": event.pageY}
+%   															,"normal")
+%   					}
+%         });
+%         function flipAnimate() {
+%           $("#myImage").attr("src", "images/img" + currentImg + ".png");
+%           currentImg++;  //次に表示したい画像の番号を設定(ローテーションにする)
+%           if(currentImg >= NumOfImage) currentImg = 0;
+%
+%           //INTERVALで指定したミリ秒後に再びflipAnimate()関数を呼び出す
+%         	timerId = setTimeout("flipAnimate()", INTERVAL);
+%         }
+%       </script>
+%     </head>
+%
+%     <body>
+%       <form name="form1"><p>
+%           <input type="button" id="startBtn" value="スタート">
+%       </p></form>
+%       <div id="myDiv"></div>
+%     </body>
+%   </html>
+%
+% \end{lstlisting}
+% \newpage
+%
+% \begin{lstlisting}[caption=ex510dev.html]
+%   <!DOCTYPE html>
+%   <html lang="ja">
+%     <head>
+%       <meta charset="UTF-8">
+%       <title>自作したフォームページのサンプル</title>
+%       <meta name="viewport" content="width=device-width,initial-scale=1">
+%
+%       <!-- 2019年10月31日現在のjQuery Mobileの最新安定板は1.4.5 -->
+%       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+%
+%       <!-- jQuery Mobileに対応している最新版 jQuery (2.1.4) -->
+%       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+%
+%       <!-- 2019年10月31日現在のjQuery Mobileの最新安定板は1.4.5 -->
+%       <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+%     </head>
+%     <body>
+%       <div data-role="page">
+%         <div data-role="header">
+%           <h1>注文フォーム</h1>
+%         </div>
+%         <div data-role="content">
+%           <form id="inquiry_form" method="post">
+%             <div data-role="fieldcontain">
+%               <label for="name">お名前</label>
+%               <input type="text" name="name" id="name" value="" />
+%               <fieldset>
+%             </div>
+%             <div data-role="fieldcontain">
+%               <label for="kind">商品名</label>
+%               <select name="kind" id="kind">
+%                 <option>選択してください</option>
+%                 <option value="選択項目1">抹茶ラテ</option>
+%                 <option value="選択項目2">コーヒーラテ2</option>
+%                 <option value="選択項目3">ミルクティー</option>
+%                 <option value="選択項目4">抹茶シェイク</option>
+%               </select>
+%             </div>
+%             <div data-role="fieldcontain">
+%               <fieldset data-role="controlgroup">
+%                 <legend>甘さ</legend>
+%                 <input type="radio" name="radio-choice" id="radio-choice-1" value="choise-1" />
+%                 <label for="radio-choice-1">0%</label>
+%                 <input type="radio" name="radio-choice" id="radio-choice-2" value="choise-2" />
+%                 <label for="radio-choice-2">50%</label>
+%                 <input type="radio" name="radio-choice" id="radio-choice-3" value="choise-3" />
+%                 <label for="radio-choice-3">100%</label>
+%               </fieldset>
+%             </div>
+%             <div data-role="fieldcontain">
+%               <label for="slider">氷の量</label>
+%               <span id = "value">少なめ</span>
+%               <input type="range" name="slider" id="slider" value="1" min="0" max="2" step="1" onchange="showValue()"/>
+%             </div>
+%           <script>
+%             function  showValue(){
+%                if( document.getElementById('slider').value==0){
+%                  document.getElementById('value').innerHTML = "なし";
+%                }else if (document.getElementById('slider').value==0) {
+%                  document.getElementById('value').innerHTML = "少なめ";
+%                }else {
+%                  document.getElementById('value').innerHTML = "普通";
+%                }
+%             }
+%           </script>
+%             <div data-role="fieldcontain">
+%               <label for="flip-1">タピオ有無</label>
+%               <select name="flip-1" id="flip-1" data-role="slider">
+%                 <option value="off">入れる</option>
+%                 <option value="on">入れない</option>
+%               </select>
+%             </div>
+%             <div data-role="fieldcontain">
+%               <label for="inquiery">備考</label>
+%               <textarea name="inquiery" id="inquirery"></textarea>
+%             </div>
+%             <input type="submit" id="submit" data-thema="b" value="送信">
+%           </form>
+%         </div>
+%       </div>
+%     </body>
+%   </html>
+% \end{lstlisting}
+% \newpage
+%
+% \begin{lstlisting}[caption=ex520\_and\_521.html]
+%   <!DOCTYPE html>
+%   <html>
+%     <head>
+%       <meta charset="UTF-8">
+%       <title>自己開発バージョン</title>
+%       <meta name="viewport" content="width=device-width, initial-scale=1">
+%       <!-- 2018年10月31日現在のjQuery Mobileの最新安定板は1.4.5 -->
+%       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+%
+%       <!-- jQuery version 1の最新版を導入する書き方 -->
+%       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+%
+%       <!-- 2018年10月31日現在のjQuery Mobileの最新安定板は1.4.5 -->
+%       <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+%       <script>
+%         $(document).on('pagecreate', '#page1', function() {
+%           $('#page1swipe').on('swipeleft', page2view);
+%         });
+%         $(document).on('pagecreate', '#page2', function() {
+%            $('#page2swipe').on('swiperight', page1view);
+%            $('#page2swipe').on('swipeleft', page3view);
+%         });
+%         $(document).on('pagecreate', '#page3', function() {
+%            $('#page3swipe').on('swiperight', page2view);
+%         });
+%         // ページ1(#page1)へ進む
+%         function page1view() {
+%           $.mobile.changePage('#page1');
+%         }
+%         // ページ2(#page2)へ進む
+%         function page2view() {
+%           $.mobile.changePage('#page2');
+%         }
+%         // ページ3(#page3)へ進む
+%         function page3view() {
+%           $.mobile.changePage('#page3');
+%         }
+%       </script>
+%     </head>
+%     <body>
+%       <!-- ページ1 -->
+%       <div data-role="page" id="page1" data-theme="a">
+%         <div data-role="header">
+%           <!-- ナビゲーションバー(左右ページへのリンク) -->
+%           <div data-role="navbar" class="navbar">
+%             <ul>
+%               <li>
+%                 <a href="#page2" data-icon="arrow-r"></a>
+%               </li>
+%             </ul>
+%           </div>
+%         </div>
+%         <div data-role="content" id="page1swipe" style="min-height:500px;">
+%           <p>ここはページ1です。</p>
+%           <p>＞ボタンをクリックするとページ2に移動します。</p>
+%         </div>
+%       </div>
+%
+%       <!-- ページ2 -->
+%       <div data-role="page" id="page2" data-theme="a">
+%         <div data-role="header">
+%           <!-- ナビゲーションバー(左右ページへのリンク) -->
+%           <div data-role="navbar" class="navbar">
+%             <ul>
+%               <li>
+%                 <a href="#page1" data-icon="arrow-l"></a>
+%               </li>
+%               <li>
+%                 <a href="#page3" data-icon="arrow-r"></a>
+%               </li>
+%             </ul>
+%           </div>
+%         </div>
+%         <div data-role="content" id="page2swipe" style="min-height:500px;">
+%           <p>ここはページ2です。</p>
+%           <p>＞ボタンをクリックするとページ3に移動します。</p>
+%           <p>＜ボタンをクリックするとページ1に移動します。</p>
+%         </div>
+%       </div>
+%
+%       <!-- ページ3 -->
+%       <div data-role="page" id="page3" data-theme="a">
+%         <div data-role="header">
+%           <!-- ナビゲーションバー(左右ページへのリンク) -->
+%           <div data-role="navbar" class="navbar">
+%             <ul>
+%               <li>
+%                 <a href="#page2" data-icon="arrow-l"></a>
+%               </li>
+%             </ul>
+%           </div>
+%         </div>
+%         <div data-role="content" id="page3swipe" style="min-height:500px;">
+%           <p>ここはページ3です。</p>
+%           <p>＜ボタンをクリックするとページ2に移動します。</p>
+%         </div>
+%       </div>
+%       <!-- data-role="page" -->
+%     </body>
+%   </html>
+% \end{lstlisting}
+% \newpage
+
+\end{document}
