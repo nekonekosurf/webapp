@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2019.11.12)  12 NOV 2019 13:35
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2019.11.12)  12 NOV 2019 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -65,607 +65,79 @@ Package color Info: Driver file: dvips.def on input line 143.
 File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
-)) (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux)
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 95.
+ (/usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+File: dvipdfmx.def 2015/11/04 v4.07 LaTeX color/graphics driver for dvipdfmx (TeX Live/ChoF)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+) (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux)
 \openout1 = `webapp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 \c@lstlisting=\count99
- (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex110.html) [1
-
-] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex120.html [2]) [3] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex210.html [4]) [5]
-(/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex220.html [6]) [7] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex410short.html [8]) [9] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex421long.html [10]) [11] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex430.html [12]
-Overfull \hbox (145.44836pt too wide) in paragraph at lines 86--87
-[][][][][] 
- []
-
-
-Overfull \hbox (179.09819pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (164.92336pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (193.27303pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 86--87
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 86--87
-[]  
- []
-
-[13]
-Overfull \hbox (155.94827pt too wide) in paragraph at lines 87--88
-[][][][][] 
- []
-
-
-Overfull \hbox (179.09819pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 87--88
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 87--88
-[]  
- []
-
-
-Overfull \hbox (145.44836pt too wide) in paragraph at lines 88--89
-[][][][][] 
- []
-
-
-Overfull \hbox (174.37325pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (164.92336pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (193.27303pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (188.54808pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 88--89
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 88--89
-[]  
- []
-
-
-Overfull \hbox (155.94827pt too wide) in paragraph at lines 89--90
-[][][][][] 
- []
-
-
-Overfull \hbox (174.37325pt too wide) in paragraph at lines 89--90
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 89--90
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 89--90
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 89--90
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 89--90
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 89--90
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 89--90
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 89--90
-[]  
- []
-
-
-Overfull \hbox (150.69832pt too wide) in paragraph at lines 90--93
-[][][][][] 
- []
-
-
-Overfull \hbox (188.54808pt too wide) in paragraph at lines 90--93
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 90--93
-[][] 
- []
-
-
-Overfull \hbox (212.1728pt too wide) in paragraph at lines 90--93
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 90--93
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 90--93
-[]  
- []
-
-[14]
-Overfull \hbox (145.44836pt too wide) in paragraph at lines 95--96
-[][][][][] 
- []
-
-
-Overfull \hbox (179.09819pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (164.92336pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (193.27303pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 95--96
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 95--96
-[]  
- []
-
-
-Overfull \hbox (155.94827pt too wide) in paragraph at lines 96--97
-[][][][][] 
- []
-
-
-Overfull \hbox (179.09819pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 96--97
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 96--97
-[]  
- []
-
-
-Overfull \hbox (145.44836pt too wide) in paragraph at lines 97--98
-[][][][][] 
- []
-
-
-Overfull \hbox (174.37325pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (164.92336pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (193.27303pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (188.54808pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (175.94827pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 97--98
-[]  
- []
-
-
-Overfull \hbox (155.94827pt too wide) in paragraph at lines 98--99
-[][][][][] 
- []
-
-
-Overfull \hbox (174.37325pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \hbox (183.82314pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \hbox (165.44836pt too wide) in paragraph at lines 98--99
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 98--99
-[]  
- []
-
-[15]
-Overfull \hbox (150.69832pt too wide) in paragraph at lines 99--102
-[][][][][] 
- []
-
-
-Overfull \hbox (188.54808pt too wide) in paragraph at lines 99--102
-[][] 
- []
-
-
-Overfull \hbox (170.69832pt too wide) in paragraph at lines 99--102
-[][] 
- []
-
-
-Overfull \hbox (160.19841pt too wide) in paragraph at lines 99--102
-[]  
- []
-
-[16]) [17] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex510dev.html [18]) [19] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex520_and_521.html [20] [21]) [22] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux) ) 
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 30.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 30.
+ [1
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 64.
+ [2]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 111.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 111.
+ [3] [4] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex110.html) [5] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex120.html [6]) [7] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex210.html) [8] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex220.html) [9] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex410short.html [10]) [11] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex421long.html [12]) [13] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex430.html [14]) [15]
+(/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex510dev.html [16]) [17] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex520_and_521.html [18]) [19]
+File: ../webapp/png/1_1.png Graphic file (type bmp)
+ <../webapp/png/1_1.png> [20] (/home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux) ) 
 Here is how much of TeX's memory you used:
- 1786 strings out of 493723
- 27316 string characters out of 6152569
- 194467 words of memory out of 5000000
- 5349 multiletter control sequences out of 15000+600000
- 8142 words of font info for 34 fonts, out of 8000000 for 9000
+ 2247 strings out of 493723
+ 33948 string characters out of 6152569
+ 203770 words of memory out of 5000000
+ 5776 multiletter control sequences out of 15000+600000
+ 11348 words of font info for 46 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 28i,6n,32p,239b,1553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,6n,32p,260b,1551s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.dvi (22 pages, 74356 bytes).
+Output written on /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.dvi (20 pages, 65428 bytes).
