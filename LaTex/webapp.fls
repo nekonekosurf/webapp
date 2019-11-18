@@ -1,0 +1,122 @@
+PWD /home/prml/workspace/development/atom_create/webapp/webapp/LaTex
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/eptex/platex.fmt
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.tex
+OUTPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.log
+INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
+INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
+INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jsize10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jsize10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux
+OUTPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/min10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/min10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/goth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+OUTPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.dvi
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex110.html
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex110.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex110.html
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/tmin9.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex/standard/min9.tfm
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex120.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex120.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex120.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex210.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex210.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex210.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex220.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex220.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/1stWeek/ex220.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex410short.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex410short.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex410short.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex421long.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex421long.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex421long.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex430.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex430.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex430.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex510dev.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex510dev.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex510dev.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex520_and_521.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex520_and_521.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/2ndWeek/ex520_and_521.html
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/1_1.png
+INPUT extractbb -O ../webapp/png/1_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/1_2.png
+INPUT extractbb -O ../webapp/png/1_2.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/2_1.png
+INPUT extractbb -O ../webapp/png/2_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/2_2.png
+INPUT extractbb -O ../webapp/png/2_2.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/4_1.png
+INPUT extractbb -O ../webapp/png/4_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/4-2.png
+INPUT extractbb -O ../webapp/png/4-2.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/4_3.png
+INPUT extractbb -O ../webapp/png/4_3.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/5_1_3.png
+INPUT extractbb -O ../webapp/png/5_1_3.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/5_2_1.png
+INPUT extractbb -O ../webapp/png/5_2_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_1_ff.png
+INPUT extractbb -O ../webapp/png/6_1_1_ff.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_1_ch.png
+INPUT extractbb -O ../webapp/png/6_1_1_ch.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_2ff.jpg
+INPUT extractbb -O ../webapp/png/6_1_2ff.jpg
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_2_ch.jpg
+INPUT extractbb -O ../webapp/png/6_1_2_ch.jpg
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_2_1.png
+INPUT extractbb -O ../webapp/png/6_2_1.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_2_2.png
+INPUT extractbb -O ../webapp/png/6_2_2.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/webapp.aux

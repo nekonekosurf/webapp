@@ -1,84 +1,85 @@
 <!-- 省略しない記法で書かれたプログラムを省略記法に書き直す課題 -->
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>ex410: ajaxの実験</title>
-    <!-- jQueryライブラリの指定：2019/10/31現在最新版をダウンロード -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-      var left_state  = false;
-      var right_state = false;
-      $(function(){
-        $('#button1').click(
-          function(){
-            if(left_state==false){
-              $.ajax('ex410-load.txt').done(
-                function(data){
-                  $('#status-area1').text('読み込み成功');
-                  $('#display-area1').text(data);
-                }
-              ).fail(
-                function(data){
-                  $('#status-area1').text('読み込み失敗');
-                }
-              );
-              left_state=true;
-            }else{
-              $('#status-area1').text('');
-              $('#display-area1').text('');
-              left_state = false;
-            }
-          }
-        );
-        $('#button2').click(
-          function(){
-            if(right_state==false){
-              $.ajax('ex410-load.html').done(
-                function(data){
-                  $('#status-area2').text('読み込み成功');
-                  $('#display-area2').html(data);
-                }
-              ).fail(
-                function(data){
-                  $('#status-area2').text('読み込み失敗');
-                }
-              );
-              right_state=true;
-            }else{
-              $('#status-area2').text('');
-              $('#display-area2').html('');
-              right_state = false;
-            }
-          }
-        );
-      }
-    );
-    </script>
-  </head>
 
-  <body bgcolor="#FFFFFF">
-    <table>
-      <tr>
-        <td>
-          <div style='clear:both;border: 2px dotted #080;margin:10px; padding:10px;'>
-            <p>
-              <button id='button1'>Ajax で取得したテキストファイルを表示</button>
-            </p>
-            <span id='status-area1'></span><br>
-            <div id='display-area1' style='border:1px solid #00f;padding:10px;font-size:20px;font-weight:bold; height: 100px'></div>
-          </div>
-        </td>
-        <td>
-          <div style='clear:both;border: 2px dotted #080;margin:10px; padding:10px;'>
-            <p>
-              <button id='button2'>Ajax で取得した HTML を表示</button>
-            </p>
-            <span id='status-area2'></span><br>
-            <div id='display-area2' style='border:1px solid #00f;padding:10px;font-size:20px;font-weight:bold; height: 100px'></div>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>ex410: ajaxの実験</title>
+  <!-- jQueryライブラリの指定：2019/10/31現在最新版をダウンロード -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    var left_state = false;
+    var right_state = false;
+    $(function() {
+      $('#button1').click(
+        function() {
+          if (left_state == false) {
+            $.ajax('ex410-load.txt').done(
+              function(data) {
+                $('#status-area1').text('読み込み成功');
+                $('#display-area1').text(data);
+              }
+            ).fail(
+              function(data) {
+                $('#status-area1').text('読み込み失敗');
+              }
+            );
+            left_state = true;
+          } else {
+            $('#status-area1').text('');
+            $('#display-area1').text('');
+            left_state = false;
+          }
+        }
+      );
+      $('#button2').click(
+        function() {
+          if (right_state == false) {
+            $.ajax('ex410-load.html').done(
+              function(data) {
+                $('#status-area2').text('読み込み成功');
+                $('#display-area2').html(data);
+              }
+            ).fail(
+              function(data) {
+                $('#status-area2').text('読み込み失敗');
+              }
+            );
+            right_state = true;
+          } else {
+            $('#status-area2').text('');
+            $('#display-area2').html('');
+            right_state = false;
+          }
+        }
+      );
+    });
+  </script>
+</head>
+
+<body bgcolor="#FFFFFF">
+  <table>
+    <tr>
+      <td>
+        <div style='clear:both;border: 2px dotted #080;margin:10px; padding:10px;'>
+          <p>
+            <button id='button1'>Ajax で取得したテキストファイルを表示</button>
+          </p>
+          <span id='status-area1'></span><br>
+          <div id='display-area1' style='border:1px solid #00f;padding:10px;font-size:20px;font-weight:bold; height: 100px'></div>
+        </div>
+      </td>
+      <td>
+        <div style='clear:both;border: 2px dotted #080;margin:10px; padding:10px;'>
+          <p>
+            <button id='button2'>Ajax で取得した HTML を表示</button>
+          </p>
+          <span id='status-area2'></span><br>
+          <div id='display-area2' style='border:1px solid #00f;padding:10px;font-size:20px;font-weight:bold; height: 100px'></div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>
