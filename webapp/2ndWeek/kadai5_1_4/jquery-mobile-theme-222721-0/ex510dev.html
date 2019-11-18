@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>自作したフォームページのサンプル</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="themes/kadai5_1_4.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+    <!-- jQuery Mobileに対応している最新版 jQuery (2.1.4) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- 2019年10月31日現在のjQuery Mobileの最新安定板は1.4.5 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>注文フォーム</h1>
+      </div>
+      <div data-role="content">
+        <form id="inquiry_form" method="post">
+          <div data-role="fieldcontain">
+            <label for="name">お名前</label>
+            <input type="text" name="name" id="name" value="" />
+            <fieldset>
+          </div>
+          <div data-role="fieldcontain">
+            <label for="kind">商品名</label>
+            <select name="kind" id="kind">
+              <option>選択してください</option>
+              <option value="選択項目1">抹茶ラテ</option>
+              <option value="選択項目2">コーヒーラテ2</option>
+              <option value="選択項目3">ミルクティー</option>
+              <option value="選択項目4">抹茶シェイク</option>
+            </select>
+          </div>
+          <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+              <legend>甘さ</legend>
+              <input type="radio" name="radio-choice" id="radio-choice-1" value="choise-1" />
+              <label for="radio-choice-1">0%</label>
+              <input type="radio" name="radio-choice" id="radio-choice-2" value="choise-2" />
+              <label for="radio-choice-2">50%</label>
+              <input type="radio" name="radio-choice" id="radio-choice-3" value="choise-3" />
+              <label for="radio-choice-3">100%</label>
+            </fieldset>
+          </div>
+          <div data-role="fieldcontain">
+            <label for="slider">氷の量</label>
+            <span id = "value">少なめ</span>
+            <input type="range" name="slider" id="slider" value="1" min="0" max="2" step="1" onchange="showValue()"/>
+          </div>
+        <!-- ここスクリプトがうまくいかない -->
+        <script>
+          function  showValue(){
+             // var elem = document.getElementById('slider');
+             // var target = document.getElementById('value');
+             // elem.innerHTML = target.value;
+             if( document.getElementById('slider').value==0){
+               document.getElementById('value').innerHTML = "なし";
+             }else if (document.getElementById('slider').value==0) {
+               document.getElementById('value').innerHTML = "少なめ";
+             }else {
+               document.getElementById('value').innerHTML = "普通";
+             }
+          }
+        </script>
+          <div data-role="fieldcontain">
+            <label for="flip-1">タピオ有無</label>
+            <select name="flip-1" id="flip-1" data-role="slider">
+              <option value="off">入れる</option>
+              <option value="on">入れない</option>
+            </select>
+          </div>
+          <div data-role="fieldcontain">
+            <label for="inquiery">備考</label>
+            <textarea name="inquiery" id="inquirery"></textarea>
+          </div>
+          <input type="submit" id="submit" data-thema="b" value="送信">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
