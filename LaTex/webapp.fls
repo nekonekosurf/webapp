@@ -105,6 +105,8 @@ INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp
 INPUT extractbb -O ../webapp/png/4_3.png
 INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/5_1_3.png
 INPUT extractbb -O ../webapp/png/5_1_3.png
+INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/5_1_4.png
+INPUT extractbb -O ../webapp/png/5_1_4.png
 INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/5_2_1.png
 INPUT extractbb -O ../webapp/png/5_2_1.png
 INPUT /home/prml/workspace/development/atom_create/webapp/webapp/LaTex/../webapp/png/6_1_1_ff.png
